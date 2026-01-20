@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.exilegion'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Hytale Server API (provided at runtime)
+    compileOnly files('libs/HytaleServer.jar')
+
+    // MultipleHUD is accessed via reflection at runtime (different Java version)
+
+    // Null safety annotations
+    compileOnly 'org.checkerframework:checker-qual:3.42.0'
+}
+
+jar {
+    // Include asset files in the JAR
+    from('Common') {
+        into 'Common'
+    }
+    from('manifest.json')
+
+    manifest {
+        attributes(
+            'Main-Class': 'com.exilegion.logo.ExilegionLogoPlugin'
+        )
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}

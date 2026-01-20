@@ -1,0 +1,4 @@
+Group #ExilegionLogo {
+  Anchor: (Bottom: 10, Left: 10, Width: 150, Height: 82);
+  Background: "ExilegionLogo.png";
+}

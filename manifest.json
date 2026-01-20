@@ -1,0 +1,22 @@
+{
+  "Group": "Exilegion",
+  "Name": "ExilegionLogo",
+  "Version": "1.0.0",
+  "Description": "Displays the Exilegion server logo in the bottom-left corner of the screen.",
+  "Authors": [
+    {
+      "Name": "Exilegion"
+    }
+  ],
+  "Website": "",
+  "ServerVersion": "*",
+  "Dependencies": {
+    "Hytale:EntityModule": "*"
+  },
+  "OptionalDependencies": {
+    "Buuz135:MultipleHUD": "*"
+  },
+  "DisabledByDefault": false,
+  "Main": "com.exilegion.logo.ExilegionLogoPlugin",
+  "IncludesAssetPack": true
+}
