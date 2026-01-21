@@ -1,7 +1,7 @@
 {
   "Group": "Exilegion",
   "Name": "ExilegionLogo",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Description": "Displays the Exilegion server logo in the bottom-left corner of the screen.",
   "Authors": [
     {
